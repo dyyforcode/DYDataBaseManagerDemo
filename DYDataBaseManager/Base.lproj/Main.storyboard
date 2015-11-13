@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Gg-ab-XKr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ql1-dF-O6P">
+            <objects>
+                <navigationController id="7Gg-ab-XKr" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ihr-MK-DMj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ADF-rB-d7l" kind="relationship" relationship="rootViewController" id="xED-FQ-sKw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUS-Bc-yfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uSv-9B-djJ">
+            <objects>
+                <viewController id="ADF-rB-d7l" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4G7-tT-E1L"/>
+                        <viewControllerLayoutGuide type="bottom" id="mC6-61-b6A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fTL-JA-MNM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsN-Uo-rcP">
+                                <rect key="frame" x="146" y="128" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="kr9-lu-Wbo"/>
+                                    <constraint firstAttribute="height" constant="30" id="wAx-mq-RLk"/>
+                                </constraints>
+                                <state key="normal" title="创建数据表">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createButtonClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="ti9-t8-lyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-In-P0J">
+                                <rect key="frame" x="30" y="214" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pfm-2u-6RI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="插入数据one">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertButtonOneClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="fq3-Qi-ZBO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-ct-0Tl">
+                                <rect key="frame" x="30" y="276" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="插入数据two">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertButtonTwoClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="r1K-Of-kGV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-AO-BOJ">
+                                <rect key="frame" x="140" y="214" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="删除数据one">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonOneClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="2Yt-jv-qvx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A1-XV-d1E">
+                                <rect key="frame" x="257" y="214" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="查询数据one">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="seleceButtonOneClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="yiW-eO-jK3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXs-CZ-vzL">
+                                <rect key="frame" x="257" y="276" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="查询数据two">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectButtonTwoClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="zU0-gz-p00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOz-y9-KyR">
+                                <rect key="frame" x="140" y="276" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="删除数据two">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonTwoClicked:" destination="ADF-rB-d7l" eventType="touchUpInside" id="9O4-C4-aml"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8A1-XV-d1E" firstAttribute="width" secondItem="I3f-AO-BOJ" secondAttribute="width" id="0zN-pE-sDf"/>
+                            <constraint firstItem="AsN-Uo-rcP" firstAttribute="top" secondItem="4G7-tT-E1L" secondAttribute="bottom" constant="64" id="19Q-rt-NrB"/>
+                            <constraint firstItem="MOz-y9-KyR" firstAttribute="top" secondItem="I3f-AO-BOJ" secondAttribute="bottom" constant="32" id="66f-Dp-BUh"/>
+                            <constraint firstItem="I3f-AO-BOJ" firstAttribute="leading" secondItem="S1a-In-P0J" secondAttribute="trailing" constant="26" id="6Aj-Bk-gwY"/>
+                            <constraint firstItem="yXs-CZ-vzL" firstAttribute="width" secondItem="8A1-XV-d1E" secondAttribute="width" id="AJR-sQ-ekv"/>
+                            <constraint firstItem="MOz-y9-KyR" firstAttribute="leading" secondItem="I3f-AO-BOJ" secondAttribute="leading" id="BTU-mX-fHB"/>
+                            <constraint firstItem="8A1-XV-d1E" firstAttribute="leading" secondItem="I3f-AO-BOJ" secondAttribute="trailing" constant="33" id="BiF-tf-ie7"/>
+                            <constraint firstAttribute="trailing" secondItem="8A1-XV-d1E" secondAttribute="trailing" constant="34" id="Cmw-Io-UVa"/>
+                            <constraint firstItem="I3f-AO-BOJ" firstAttribute="top" secondItem="S1a-In-P0J" secondAttribute="top" id="FdO-Cw-lgt"/>
+                            <constraint firstItem="I3f-AO-BOJ" firstAttribute="width" secondItem="S1a-In-P0J" secondAttribute="width" id="HWZ-Ag-GNK"/>
+                            <constraint firstItem="LpL-ct-0Tl" firstAttribute="width" secondItem="S1a-In-P0J" secondAttribute="width" id="JqC-pn-uW3"/>
+                            <constraint firstItem="LpL-ct-0Tl" firstAttribute="top" secondItem="S1a-In-P0J" secondAttribute="bottom" constant="32" id="TY9-g0-Bt8"/>
+                            <constraint firstItem="S1a-In-P0J" firstAttribute="leading" secondItem="fTL-JA-MNM" secondAttribute="leading" constant="30" id="VuB-P6-V8f"/>
+                            <constraint firstItem="8A1-XV-d1E" firstAttribute="height" secondItem="I3f-AO-BOJ" secondAttribute="height" id="W9G-No-Ih1"/>
+                            <constraint firstItem="S1a-In-P0J" firstAttribute="top" secondItem="4G7-tT-E1L" secondAttribute="bottom" constant="150" id="aBE-XX-hKd"/>
+                            <constraint firstItem="MOz-y9-KyR" firstAttribute="height" secondItem="I3f-AO-BOJ" secondAttribute="height" id="cC7-yk-ZkZ"/>
+                            <constraint firstItem="yXs-CZ-vzL" firstAttribute="height" secondItem="8A1-XV-d1E" secondAttribute="height" id="cvb-gL-Wno"/>
+                            <constraint firstItem="LpL-ct-0Tl" firstAttribute="leading" secondItem="S1a-In-P0J" secondAttribute="leading" id="fkn-xl-TM4"/>
+                            <constraint firstItem="yXs-CZ-vzL" firstAttribute="leading" secondItem="8A1-XV-d1E" secondAttribute="leading" id="ktd-J1-W3z"/>
+                            <constraint firstItem="I3f-AO-BOJ" firstAttribute="height" secondItem="S1a-In-P0J" secondAttribute="height" id="lNg-HM-wii"/>
+                            <constraint firstItem="MOz-y9-KyR" firstAttribute="width" secondItem="I3f-AO-BOJ" secondAttribute="width" id="oQI-iO-Rdl"/>
+                            <constraint firstItem="LpL-ct-0Tl" firstAttribute="height" secondItem="S1a-In-P0J" secondAttribute="height" id="ubQ-XY-rBb"/>
+                            <constraint firstItem="yXs-CZ-vzL" firstAttribute="top" secondItem="8A1-XV-d1E" secondAttribute="bottom" constant="32" id="yiY-0j-oC5"/>
+                            <constraint firstItem="8A1-XV-d1E" firstAttribute="top" secondItem="I3f-AO-BOJ" secondAttribute="top" id="zOa-bD-lcI"/>
+                            <constraint firstItem="AsN-Uo-rcP" firstAttribute="centerX" secondItem="fTL-JA-MNM" secondAttribute="centerX" id="zpu-CV-RC5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yUS-cv-B3b"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hom-Dd-ICV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422.5" y="135.5"/>
+        </scene>
+    </scenes>
+</document>
